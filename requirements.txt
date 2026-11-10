@@ -1,0 +1,21 @@
+# Python 3.12 was used for the reference runs.
+
+# Data processing and classical models
+numpy==2.3.5
+pandas==2.2.3
+scikit-learn==1.8.0
+scipy==1.17.0
+openpyxl==3.1.5
+
+# Quantum models and simulation
+qiskit==2.6.2
+qiskit-machine-learning==0.9.1
+
+# Notebook execution
+ipython==9.16.1
+ipykernel==7.4.0
+jupyterlab==4.6.6
+
+# Qiskit circuit.draw(output="mpl")
+matplotlib==3.10.8
+pylatexenc==2.10
