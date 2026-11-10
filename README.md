@@ -13,9 +13,9 @@ A three-stage pipeline predicts subscription probabilities, selects six customer
 | `01_stage1_prediction.ipynb` | Read the workbook, compare models, fit the frozen blend and rank 100 test customers. |
 | `02_stage2_selection.ipynb` | Select six from the top ten using QAOA p=1, 2, 3; compare with exact enumeration. |
 | `03_stage3_simulation.ipynb` | Encode the six probabilities and compare quantum sampling with exact and Monte Carlo results. |
-| `stage1_results.csv` | 100 customer IDs, predicted probabilities, ranks and top-10 flags. |
-| `stage2_results.json` | Candidate inputs, exported p=3 selection, constraints, objective, all QAOA runs and exact optimum. |
-| `stage3_results.json` | Selected IDs, qubit order, probabilities, angles, measurement counts, estimates and errors. |
+| `stage1_predictions.csv` | 100 customer IDs, predicted probabilities, ranks and top-10 flags. |
+| `stage2_selection.json` | Candidate inputs, exported p=3 selection, constraints, objective, all QAOA runs and exact optimum. |
+| `stage3_simulation.json` | Selected IDs, qubit order, probabilities, angles, measurement counts, estimates and errors. |
 | `stage1_comparison.csv` | Cross-validation metrics for all eight model configurations. |
 | `stage2_comparison.csv` | Objective gaps, sampling probabilities, counts, optimizer effort, runtimes and circuit sizes. |
 | `stage3_comparison.csv` | Exact, statevector, quantum-sampling and Monte Carlo estimates with their errors. |
