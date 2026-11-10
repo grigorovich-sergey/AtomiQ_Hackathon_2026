@@ -21,7 +21,7 @@ A three-stage pipeline predicts subscription probabilities, selects six customer
 | `stage3_comparison.csv` | Exact, statevector, quantum-sampling and Monte Carlo estimates with their errors. |
 | `requirements.txt` | Pinned dependencies for all notebooks, JupyterLab and circuit drawing. |
 
-Input: the corrected participant workbook, including test customer IDs, at `data/bank_campaign_participant_release.xlsx`.
+Input: the corrected participant workbook, including test customer IDs, at `bank_campaign_participant_release.xlsx`.
 
 Use Python 3.12. From the project folder, install dependencies and open JupyterLab:
 
