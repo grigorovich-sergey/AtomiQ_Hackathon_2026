@@ -1,0 +1,209 @@
+{
+  "setup": {
+    "source_stage2_depth": 3,
+    "threshold": 3,
+    "customers_assumed_independent": true,
+    "ancillas": 0,
+    "state_preparation": "Ry(2*arcsin(sqrt(p_i))) on qubit i, starting in zero",
+    "qubit_order": "selected_ids[i] maps to qubit i; display q5...q0",
+    "sampling": "StatevectorSampler default; no shot-count override",
+    "shots": 1024,
+    "monte_carlo_trials": 1024,
+    "seeds": {
+      "sampler": 42,
+      "monte_carlo": 42,
+      "transpiler": 42
+    },
+    "backend": "Qiskit ideal statevector simulation on CPU",
+    "device_noise_model": null,
+    "physical_hardware_used": false,
+    "basis_gates": [
+      "rz",
+      "sx",
+      "x",
+      "cx"
+    ],
+    "optimization_level": 1,
+    "hardware_target": null,
+    "stage1_predictions_sha256": "806b48e07f491d87eeab87d62be6e74d532e805a77ca26ce5e2ff1012f588edc",
+    "stage2_results_sha256": "70cf25d612cd34d2b3f66ef160f79b14b4cef793432a14e47591210ea16b3a54"
+  },
+  "selected_ids": [
+    "C0081",
+    "C0031",
+    "C0079",
+    "C0170",
+    "C0327",
+    "C0256"
+  ],
+  "customer_to_qubit": [
+    {
+      "qubit": 0,
+      "customer_id": "C0081",
+      "predicted_probability": 0.46518982792267777,
+      "ry_angle_radians": 1.5011196180685331
+    },
+    {
+      "qubit": 1,
+      "customer_id": "C0031",
+      "predicted_probability": 0.45097275696718214,
+      "ry_angle_radians": 1.472584029864735
+    },
+    {
+      "qubit": 2,
+      "customer_id": "C0079",
+      "predicted_probability": 0.29805700067155705,
+      "ry_angle_radians": 1.155035565569856
+    },
+    {
+      "qubit": 3,
+      "customer_id": "C0170",
+      "predicted_probability": 0.2434245790027878,
+      "ry_angle_radians": 1.0319445149787039
+    },
+    {
+      "qubit": 4,
+      "customer_id": "C0327",
+      "predicted_probability": 0.24136165814603788,
+      "ry_angle_radians": 1.0271305675610927
+    },
+    {
+      "qubit": 5,
+      "customer_id": "C0256",
+      "predicted_probability": 0.1813583041998894,
+      "ry_angle_radians": 0.8798284026061477
+    }
+  ],
+  "exact_probability": 0.27592526436112386,
+  "exact_quantum_probability": 0.27592526436112397,
+  "quantum_estimate": 0.27734375,
+  "quantum_successes": 284,
+  "monte_carlo_estimate": 0.3046875,
+  "monte_carlo_successes": 312,
+  "sampling_standard_error": 0.013968103761909994,
+  "expected_subscribers": 1.880364126910132,
+  "measurement_counts": {
+    "011000": 17,
+    "000110": 36,
+    "100001": 28,
+    "010010": 22,
+    "000000": 93,
+    "110011": 3,
+    "010110": 9,
+    "011001": 15,
+    "000001": 113,
+    "000111": 34,
+    "000100": 33,
+    "101000": 9,
+    "010000": 29,
+    "100000": 19,
+    "000010": 71,
+    "001011": 24,
+    "110010": 4,
+    "100100": 10,
+    "010101": 13,
+    "110001": 3,
+    "000011": 71,
+    "001000": 31,
+    "010001": 30,
+    "011100": 5,
+    "000101": 34,
+    "010011": 19,
+    "010111": 8,
+    "001010": 21,
+    "011110": 3,
+    "001001": 26,
+    "110000": 8,
+    "100101": 8,
+    "001100": 13,
+    "001101": 17,
+    "101010": 8,
+    "010100": 13,
+    "100110": 6,
+    "101110": 4,
+    "111001": 5,
+    "100011": 14,
+    "100010": 13,
+    "011011": 11,
+    "101111": 3,
+    "101001": 4,
+    "011010": 7,
+    "001110": 12,
+    "011111": 2,
+    "100111": 10,
+    "110100": 5,
+    "101100": 1,
+    "001111": 7,
+    "101011": 3,
+    "110110": 2,
+    "101101": 2,
+    "111100": 2,
+    "111110": 2,
+    "111011": 1,
+    "110111": 2,
+    "111000": 1,
+    "110101": 4,
+    "111010": 1
+  },
+  "comparison": [
+    {
+      "method": "exact_classical",
+      "probability": 0.27592526436112386,
+      "draws": 0,
+      "signed_error": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "method": "exact_statevector",
+      "probability": 0.27592526436112397,
+      "draws": 0,
+      "signed_error": 1.1102230246251565e-16,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "method": "quantum_sampling",
+      "probability": 0.27734375,
+      "draws": 1024,
+      "signed_error": 0.0014184856388761435,
+      "absolute_error": 0.0014184856388761435
+    },
+    {
+      "method": "classical_monte_carlo",
+      "probability": 0.3046875,
+      "draws": 1024,
+      "signed_error": 0.028762235638876144,
+      "absolute_error": 0.028762235638876144
+    }
+  ],
+  "circuit_resources": [
+    {
+      "circuit": "original",
+      "qubits": 6,
+      "depth": 1,
+      "one_qubit_gates": 6,
+      "two_qubit_gates": 0,
+      "swaps": 0,
+      "gate_counts": {
+        "ry": 6
+      }
+    },
+    {
+      "circuit": "transpiled",
+      "qubits": 6,
+      "depth": 4,
+      "one_qubit_gates": 24,
+      "two_qubit_gates": 0,
+      "swaps": 0,
+      "gate_counts": {
+        "rz": 12,
+        "sx": 12
+      }
+    }
+  ],
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scipy": "1.15.2",
+    "qiskit": "2.3.1"
+  }
+}
